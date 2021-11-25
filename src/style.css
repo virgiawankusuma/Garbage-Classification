@@ -2,6 +2,13 @@
     scroll-behavior: smooth;
 }
 
+.hr-title {
+    color: #e76f51;
+    opacity: 100%;
+    width: 20%;
+    margin: auto;
+}
+
 footer {
     text-align: center;
     color: #ffffff;
