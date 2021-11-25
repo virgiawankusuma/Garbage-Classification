@@ -1,0 +1,21 @@
+* {
+    scroll-behavior: smooth;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #264653;
+    padding: 7vh 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2a9d8f;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: underline;
+    color: #ddd8b8;
+}
