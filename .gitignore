@@ -102,8 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# webpack
-webpack.common.js
-webpack.dev.js
-webpack.prod.js
