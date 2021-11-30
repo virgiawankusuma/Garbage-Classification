@@ -169,6 +169,11 @@
     display: block;
 }
 
+#credits .card {
+    background-color: #ddd8b8;
+    border: 0;
+}
+
 footer {
     text-align: center;
     color: #ffffff;
