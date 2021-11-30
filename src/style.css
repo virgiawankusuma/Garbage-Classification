@@ -2,6 +2,19 @@
     scroll-behavior: smooth;
 }
 
+.navbar {
+    background-color: #248579;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
 .hr-title {
     display: inline-block;
 }
