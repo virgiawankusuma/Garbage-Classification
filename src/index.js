@@ -31,16 +31,12 @@ btnDefault.addEventListener('change', function () {
             const result = reader.result;
             imgClassify.src = result;
             wrapper1.classList.add('actived');
-            btnCustom.classList.add('d-none');
-            btnPredict.classList.remove('d-none');
         }
         console.log(btnDefault.value);
         btnCancel.addEventListener('click', () => {
             window.location = '/#klasifikasikan';
             imgClassify.src = '';
             wrapper1.classList.remove('actived');
-            btnCustom.classList.remove('d-none');
-            btnPredict.classList.add('d-none');
             btnDefault.value = '';
             console.log(btnDefault.value + 'sudah dihapus');
 
@@ -51,14 +47,16 @@ btnDefault.addEventListener('change', function () {
         })
         reader.readAsDataURL(file);
     }
+
     if (this.value) {
         filename.textContent = this.value.match(regEx);
     }
+
+    btnPredict.addEventListener('click', function () {
+        window.location = '/#hasil-klasifikasi';
+        wrapper2.classList.add('actived');
+        wrapper2.classList.add('border-0');
+        imgClassified.src = imgClassify.src;
+    });
 });
 
-btnPredict.addEventListener('click', function () {
-    window.location = '/#hasil-klasifikasi';
-    wrapper2.classList.add('actived');
-    wrapper2.classList.add('border-0');
-    imgClassified.src = imgClassify.src;
-});

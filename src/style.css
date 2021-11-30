@@ -37,7 +37,7 @@
 .wrapper-1 .text {
     font-size: 20px;
     font-weight: 500;
-    color: gray;
+    color: #2a9d8f;
 }
 
 .wrapper-1 #btn-cancel {
@@ -46,7 +46,10 @@
     top: 15px;
     font-size: 20px;
     cursor: pointer;
-    color: #2a9d8f;
+    background: #2a9d8f;
+    color: #ffffff;
+    padding: 0 7px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
     display: none;
 }
 
@@ -62,19 +65,18 @@
 
 .wrapper-2 .icon {
     font-size: 100px;
-    color: #2a9d8f;
+    color: #ffffff;
 }
 
 .wrapper-2 .text {
     font-size: 20px;
     font-weight: 500;
-    color: gray;
+    color: #ffffff
 }
 
 .actived {
     border: 0;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-    /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important; */
 }
 
 .actived:hover #btn-cancel {
