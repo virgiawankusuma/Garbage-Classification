@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <title>Garbage Classification &mdash; Klasifikasi Jenis Sampah</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -38,28 +38,79 @@
     </header>
 
     <main class="container my-5">
-        <div id="content">
+        <div id="content" class="mb-5">
             <article></article>
-            <article></article>
+            <article class="row mb-4 text-center" id="klasifikasikan">
+                <h3 class="card-title hr-title">
+                    <i class="fas fa-expand"></i>
+                    Klasifikasikan
+                </h3>
+                <section class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card h-100 border-0">
+                        <div
+                            class="wrapper-1 rounded-3 position-relative d-flex w-100 align-items-center justify-content-center">
+                            <div
+                                class="image position-absolute d-flex w-100 h-100 align-items-center justify-content-center">
+                                <img id="img-classify" src="" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="content">
+                                <div class="icon"><i class="far fa-image"></i>
+                                </div>
+                                <div class="text">Tidak ada gambar terpilih</i>
+                                </div>
+                            </div>
+                            <div id="btn-cancel"><i class="fas fa-times"></i></div>
+                            <div class="file-name">Nama file</div>
+                        </div>
+                        <input type="file" id="btn-default" accept="image/,.jpg,.jpeg,.png" hidden>
+                        <button id="btn-custom" class="btn btn-secondary mt-3"><i class="fas fa-upload"></i> Pilih
+                            gambar..</button>
+                        <button id="btn-predict" class="btn btn-primary mt-3 d-none"><i class="fas fa-expand"></i>
+                            Klasifikasikan</button>
+                    </div>
+                </section>
+                <section class="col-lg-6 col-md-6 col-12 mb-5" id="hasil-klasifikasi">
+                    <div class="card border-0 h-100">
+                        <div
+                            class="wrapper-2 rounded-3 position-relative d-flex w-100 align-items-center justify-content-center h-100 border">
+                            <div
+                                class="image position-absolute d-flex w-100 h-100 align-items-center justify-content-center">
+                                <img id="img-classified" src="" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="content">
+                                <div class="icon"><i class="fas fa-compress"></i>
+                                </div>
+                                <div class="text">Hasil Klasifikasi</i>
+                                </div>
+                            </div>
+                            <div class="file-name">
+                                <p><i class="fas fa-trash-alt"></i></p>
+                                <span>Sampah <b>[biological]</b></span>
+                            </div>
+                        </div>
+                        <!-- <button id="btn-repeat" class="btn btn-warning mt-3"><i class="fas fa-redo"></i>
+                            Klasifikasi selanjutnya</button> -->
+                    </div>
+                </section>
+            </article>
         </div>
-        <aside id="aside">
+        <aside id="aside" class="mb-5">
             <article id="timpengembang" class="row text-center">
-                <div class="col-lg-4 col-md-12 col-xl-4 col-12 my-3">
+                <section class="col-lg-4 col-md-12 col-xl-4 col-12 my-3">
                     <div class="card border-0 h-100 shadow">
                         <div class="card-body my-3">
-                            <h3 class="card-title">
+                            <h3 class="card-title hr-title">
                                 <i class="fas fa-user-friends"></i>
                                 Tim
                                 Pengembang
-                                <hr class="hr-title pb-1 mt-2">
                             </h3>
                             <img src="https://image.freepik.com/free-vector/programmer-working-flat-style_52683-15041.jpg"
                                 class="card-img-bottom" alt="Programmer working in flat style">
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="col-lg-4 col-md-6 col-xl-4 col-12 my-3">
+                <section class="col-lg-4 col-md-6 col-xl-4 col-12 my-3">
                     <div class="card border-0 h-100 shadow">
                         <!-- <img src="" class="card-img-top" alt="Foto Gusti Muhammad Aulia Nur Sulthan"> -->
                         <svg class="bd-placeholder-img" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -84,9 +135,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="col-lg-4 col-md-6 col-xl-4 col-12 my-3">
+                <section class="col-lg-4 col-md-6 col-xl-4 col-12 my-3">
                     <div class="card border-0 h-100 shadow">
                         <!-- <img src="" class="card-img-top" alt="Foto Virgiawan Teguh Kusuma"> -->
                         <svg class="bd-placeholder-img" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -112,14 +163,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </article>
             <article id="credit"></article>
         </aside>
     </main>
 
-    <footer>
-        <p class="fw-bold">&copy; Copyright 2021 <a href="#biodata">Team ID CSD-114</a></p>
+    <footer class="footer mt-auto">
+        <p class="fw-bold">&copy; Copyright 2021 <a href="#timpengembang">Team ID CSD-114</a></p>
     </footer>
 </body>
 
