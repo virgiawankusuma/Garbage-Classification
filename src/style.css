@@ -8,11 +8,14 @@
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important;
+    color: #eaeaea !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ddd8b8 !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: ease-out;
+    transition-duration: 0.15s;
     text-decoration: underline;
 }
 
@@ -190,7 +193,25 @@
 
 #credits .card {
     background-color: #ddd8b8;
+    color: #182d35;
     border: 0;
+}
+
+#credits li {
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+#credits li a {
+    color: #182d35;
+    margin-left: 5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#credits li a:hover {
+    color: #e76f51;
+    text-decoration: underline;
 }
 
 footer {
