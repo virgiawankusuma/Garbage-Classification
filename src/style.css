@@ -1,21 +1,23 @@
-* {
-    scroll-behavior: smooth;
-}
-
 .navbar {
-    background-color: #248579;
+    /* background-color: transparent; */
+    background-color: #2a9d8f;
 }
 
 .navbar-nav {
     font-size: 18px;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link {
     color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd8b8 !important;
     text-decoration: underline;
 }
 
 .jumbotron {
+    height: 100vh;
     background-color: #264653;
     color: #ffffff;
 }
@@ -105,12 +107,12 @@
     display: block;
 }
 
-#btn-custom {
+#btn-upload {
     background-color: #264653 !important;
     border: 0;
 }
 
-#btn-custom:hover {
+#btn-upload:hover {
     background-color: #182d35 !important;
 }
 

@@ -11,7 +11,7 @@ const wrapper1 = document.querySelector('.wrapper-1');
 const wrapper2 = document.querySelector('.wrapper-2');
 const btnDefault = document.querySelector('#btn-default');
 const btnCancel = document.querySelector('#btn-cancel');
-const btnCustom = document.querySelector('#btn-custom');
+const btnUpload = document.querySelector('#btn-upload');
 const btnPredict = document.querySelector('#btn-predict');
 const imgClassify = document.querySelector('#img-classify');
 const imgClassified = document.querySelector('#img-classified');
@@ -19,7 +19,7 @@ const filename = document.querySelector('.file-name');
 
 const regEx = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
 
-btnCustom.addEventListener('click', () => {
+btnUpload.addEventListener('click', () => {
     btnDefault.click();
 });
 
