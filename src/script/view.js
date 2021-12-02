@@ -1,3 +1,4 @@
+import './component/navigation-bar';
 
 const view = () => {
     const wrapper1 = document.querySelector('.wrapper-1');
