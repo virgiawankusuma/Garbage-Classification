@@ -2,6 +2,7 @@ import './component/navigation-bar';
 import './component/jumbotron-section';
 import './component/classify-section';
 import './component/developer-section';
+import './component/credits-section';
 
 const view = () => {
     const wrapper1 = document.querySelector('.wrapper-1');
