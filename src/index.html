@@ -16,57 +16,9 @@
 
     <main class="container mb-5">
         <div id="content" class="my-5">
-            <article class="row mb-5 text-center" id="klasifikasikan">
-                <h3 class="card-title hr-title">
-                    <i class="fas fa-expand"></i>
-                    Klasifikasikan
-                </h3>
-                <section class="col-lg-6 col-md-6 col-12 mb-5">
-                    <div class="card h-100 border-0">
-                        <div
-                            class="wrapper-1 rounded-3 position-relative d-flex w-100 align-items-center justify-content-center">
-                            <div
-                                class="image position-absolute d-flex w-100 h-100 align-items-center justify-content-center">
-                                <img id="img-classify" src="" alt="" class="w-100 h-100">
-                            </div>
-                            <div class="content">
-                                <div class="icon"><i class="far fa-image"></i>
-                                </div>
-                                <div class="text">Tidak ada gambar terpilih</i>
-                                </div>
-                            </div>
-                            <div id="btn-cancel"><i class="fas fa-times"></i></div>
-                            <div class="file-name">Nama file</div>
-                        </div>
-                        <input type="file" id="btn-default" accept="image/,.jpg,.jpeg,.png" hidden>
-                        <button id="btn-upload" class="btn btn-secondary mt-2"><i class="fas fa-upload"></i> Pilih
-                            gambar..</button>
-                    </div>
-                </section>
-                <section class="col-lg-6 col-md-6 col-12 mb-5" id="hasil-klasifikasi">
-                    <button id="btn-predict" class="btn border-0 h-100 w-100 p-0 m-0">
-                        <div
-                            class="wrapper-2 rounded-3 position-relative d-flex py-5 w-100 h-100 align-items-center justify-content-center">
-                            <div
-                                class="image position-absolute d-flex w-100 h-100 align-items-center justify-content-center">
-                                <img id="img-classified" src="" alt="" class="h-100 w-100">
-                            </div>
-                            <div class="content">
-                                <div class="icon"><i class="fas fa-compress"></i>
-                                </div>
-                                <div class="text">Klasifikasikan</i>
-                                </div>
-                            </div>
-                            <div class="file-name">
-                                <p><i class="fas fa-trash-alt"></i></p>
-                                <span>Sampah <b>[biological]</b></span>
-                            </div>
-                        </div>
-                    </button>
-                </section>
-            </article>
+            <classify-section class="row mb-5 text-center" id="klasifikasikan"></classify-section>
         </div>
-        <aside id="aside" class="my-5">
+        <aside id=" aside" class="my-5">
             <article id="tim-pengembang" class="row mb-5">
                 <section class="col-lg-4 col-md-12 col-xl-4 col-12 my-3">
                     <div class="card border-0 h-100 shadow">
@@ -92,7 +44,8 @@
                         <div class="card-body shadow">
                             <div class="card-item">
                                 <h5 class="card-title text-center">Gusti Muhammad Aulia Nur Sulthan</h5>
-                                <p class="card-text text-center">Mahasiswa Pendidikan Ilmu Komputer, Universitas Lambung
+                                <p class="card-text text-center">Mahasiswa Pendidikan Ilmu Komputer, Universitas
+                                    Lambung
                                     Mangkurat</p>
                                 <ul>
                                     <li>Machine Learning & Front-End Web Developer M3 Group</li>
@@ -168,15 +121,18 @@
                                             Garbage Classification (12 classes)</a>
                                     </li>
                                     <li>Color Palette &mdash;<a
-                                            href="https://coolors.co/264653-2a9d8f-e76f51-ddd8b8-ffffff">Generate from
+                                            href="https://coolors.co/264653-2a9d8f-e76f51-ddd8b8-ffffff">Generate
+                                            from
                                             Coolors</a>
                                     </li>
                                     <li>CSS Framework &mdash;<a href="https://getbootstrap.com/">Bootstrap
                                             5.1.3</a>
                                     </li>
-                                    <li>Icon Toolkit &mdash;<a href="https://fontawesome.com/">Font Awesome 5.15.4</a>
+                                    <li>Icon Toolkit &mdash;<a href="https://fontawesome.com/">Font Awesome
+                                            5.15.4</a>
                                     </li>
-                                    <li>Gambar 1 &mdash;<a href="https://unsplash.com/photos/_j-EIqIysGM">Bin Unsplash
+                                    <li>Gambar 1 &mdash;<a href="https://unsplash.com/photos/_j-EIqIysGM">Bin
+                                            Unsplash
                                             by @badenabroad</a>
                                     </li>
                                     <li>Gambar 2 &mdash;<a href="https://unsplash.com/photos/_j-EIqIysGM">Programmer
