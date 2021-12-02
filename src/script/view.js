@@ -1,4 +1,5 @@
 import './component/navigation-bar';
+import './component/jumbotron-section';
 
 const view = () => {
     const wrapper1 = document.querySelector('.wrapper-1');
