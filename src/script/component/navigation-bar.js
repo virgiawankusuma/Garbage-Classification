@@ -1,4 +1,4 @@
-class navigationBar extends HTMLElement {
+class NavigationBar extends HTMLElement {
     connectedCallback() {
         this.render();
     }
@@ -31,4 +31,4 @@ class navigationBar extends HTMLElement {
 
 }
 
-customElements.define('navigation-bar', navigationBar);
+customElements.define('navigation-bar', NavigationBar);

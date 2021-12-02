@@ -1,4 +1,4 @@
-class jumbotronSection extends HTMLElement {
+class JumbotronSection extends HTMLElement {
     connectedCallback() {
         this.render();
     }
@@ -28,4 +28,4 @@ class jumbotronSection extends HTMLElement {
     }
 }
 
-customElements.define('jumbotron-section', jumbotronSection);
+customElements.define('jumbotron-section', JumbotronSection);
