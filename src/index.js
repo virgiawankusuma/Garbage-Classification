@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 import '@fortawesome/fontawesome-free/js/all.js';
 
-import view from './script/view.js';
+import main from './script/view/main.js';
 
-document.addEventListener("DOMContentLoaded", view);
+document.addEventListener("DOMContentLoaded", main);
 

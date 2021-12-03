@@ -1,10 +1,10 @@
-import './component/navigation-bar';
-import './component/jumbotron-section';
-import './component/classify-section';
-import './component/developer-section';
-import './component/credits-section';
+import '../component/navigation-bar';
+import '../component/jumbotron-section';
+import '../component/classify-section';
+import '../component/developer-section';
+import '../component/credits-section';
 
-const view = () => {
+const main = () => {
     const wrapper1 = document.querySelector('.wrapper-1');
     const wrapper2 = document.querySelector('.wrapper-2');
     const btnDefault = document.querySelector('#btn-default');
@@ -59,4 +59,4 @@ const view = () => {
     });
 }
 
-export default view;
+export default main;
