@@ -4,6 +4,9 @@ import '../component/classify-section';
 import '../component/developer-section';
 import '../component/credits-section';
 
+import predict from './predict';
+document.addEventListener("DOMContentLoaded", predict);
+
 const main = () => {
     const wrapper1 = document.querySelector('.wrapper-1');
     const wrapper2 = document.querySelector('.wrapper-2');
