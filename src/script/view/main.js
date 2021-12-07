@@ -60,7 +60,7 @@ const main = () => {
             wrapper2.classList.add('border-0');
             imgClassified.src = imgClassify.src;
 
-            classify();
+            classify(imgClassified);
         });
     });
 }
