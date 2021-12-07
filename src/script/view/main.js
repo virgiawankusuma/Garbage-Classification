@@ -4,8 +4,9 @@ import '../component/classify-section';
 import '../component/developer-section';
 import '../component/credits-section';
 
-import predict from './predict';
-document.addEventListener("DOMContentLoaded", predict);
+import { init, classify } from './predict';
+
+document.addEventListener("DOMContentLoaded", init);
 
 const main = () => {
     const wrapper1 = document.querySelector('.wrapper-1');
@@ -58,6 +59,8 @@ const main = () => {
             wrapper2.classList.add('actived');
             wrapper2.classList.add('border-0');
             imgClassified.src = imgClassify.src;
+
+            classify();
         });
     });
 }
