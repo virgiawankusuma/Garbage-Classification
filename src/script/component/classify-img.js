@@ -20,7 +20,7 @@ class ClassifyImg extends HTMLElement {
                 </div>
                 <div class="file-name">
                     <p><i class="fas fa-trash-alt"></i></p>
-                    <span>Sampah <b>[biological]</b></span>
+                    <span>Jenis sampah <b id='jensam'>[...]</b></span>
                 </div>
             </div>
         </button>

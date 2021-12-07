@@ -38,6 +38,8 @@ async function classify(image) {
         }).slice(0, 5);
 
     console.log(JSON.stringify(results));
+    const jensam = document.getElementById('jensam');
+    jensam.innerText = `[${results[0].className}]`;
 }
 
 export { init, classify };
