@@ -5,7 +5,7 @@ async function init() {
 	console.log('model loading..');
 	model = undefined;
 	model = await tf.loadLayersModel(
-		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model.json'
+		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/model.json'
 	);
 	console.log('model loaded..');
 }
