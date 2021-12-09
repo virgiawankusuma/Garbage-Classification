@@ -1,23 +1,23 @@
 import data from './jumbotron-data.js';
 
 class JumbotronSection extends HTMLElement {
-	constructor() {
-		super();
-		this.text = data;
-	}
+    constructor() {
+        super();
+        this.text = data;
+    }
 
-	set texts(texts) {
-		this._texts = texts;
-		this.render();
-	}
+    set texts(texts) {
+        this._texts = texts;
+        this.render();
+    }
 
-	connectedCallback() {
-		this.render();
-	}
+    connectedCallback() {
+        this.render();
+    }
 
-	render() {
-		this.text.forEach((element) => {
-			this.innerHTML = `
+    render() {
+        this.text.forEach((element) => {
+            this.innerHTML = `
             <div class="jumbotron py-3">
                 <div class="container row mx-auto py-5 my-5">
                     <section class="col-lg-6 col-12 m-auto text-center">
@@ -35,8 +35,8 @@ class JumbotronSection extends HTMLElement {
                 </div>
             </div>
         `;
-		});
-	}
+        });
+    }
 }
 
 customElements.define('jumbotron-section', JumbotronSection);

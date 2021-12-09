@@ -1,10 +1,10 @@
 import data from './credits-data.js';
-import './credits-list';
+import './credits-item.js';
 
 class CreditsSection extends HTMLElement {
 	constructor() {
 		super();
-		this.credit = data;
+		this._credits = data;
 	}
 
 	set credits(credits) {
@@ -18,25 +18,28 @@ class CreditsSection extends HTMLElement {
 
 	render() {
 		this.innerHTML = `
-            <section class="col-12">
-                <div class="card shadow py-5">
-                    <div class="card-body">
-                        <div class="card-title text-center">
-                            <h3 class="card-title hr-title">
-                                <i class="fas fa-info-circle"></i>
-                                Credits
-                            </h3>
-                            <div class="card-text text-center">
-							<ul id='credit-card-text'>
-                            </ul>
-							</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            `;
-		document.querySelector('#credit-card-text').innerHTML =
-			'<credits-list></credits-list>';
+		<div class="col-12">
+			<div class="card shadow py-5">
+				<div class="card-body text-center">
+					<h3 class="card-title hr-title">
+						<i class="fas fa-info-circle"></i>
+						Credits
+					</h3>
+					<ul class="card-text" id='credits-list'>
+					</ul>
+				</div>
+			</div>
+		</div>
+		`;
+
+		const creditList = document.getElementById('credits-list');
+
+		this._credits.forEach(credit => {
+			const creditElements = document.createElement('credit-item');
+			creditElements.credit = credit;
+
+			creditList.append(this.appendChild(creditElements));
+		});
 	}
 }
 

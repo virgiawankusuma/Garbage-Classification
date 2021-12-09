@@ -1,19 +1,19 @@
 class AuthorDev extends HTMLElement {
-	constructor() {
-		super();
-	}
+    constructor() {
+        super();
+    }
 
-	set author(author) {
-		this._author = author;
-		this.render();
-	}
+    set author(author) {
+        this._author = author;
+        this.render();
+    }
 
-	connectedCallback() {
-		this.render();
-	}
+    connectedCallback() {
+        this.render();
+    }
 
-	render() {
-		this.innerHTML = `
+    render() {
+        this.innerHTML = `
         <div class="card border-0 h-100 pt-5">
             <!-- <img src="" class="card-team" alt="Foto Profile"> -->
             <svg class="bd-placeholder-img card-team" xmlns="http://www.w3.org/2000/svg" role="img"
@@ -27,7 +27,7 @@ class AuthorDev extends HTMLElement {
                     <p class="card-text text-center">${this._author.bio}</p>
                     <ul>
                         <li>${this._author.group}</li>
-                        <li>${this._author.hobbi}</li>
+                        <li>${this._author.hobby}</li>
                     </ul>
                     <hr>
                     <div class="row">
@@ -44,7 +44,7 @@ class AuthorDev extends HTMLElement {
                 </div>
             </div>
         </div>`;
-	}
+    }
 }
 
 customElements.define('author-dev', AuthorDev);
