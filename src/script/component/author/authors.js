@@ -23,12 +23,14 @@ class AuthorDev extends HTMLElement {
             </svg>
             <div class="card-body shadow">
                 <div class="card-item">
-                    <h5 class="card-title text-center">${this._author.nama}</h5>
-                    <p class="card-text text-center">${this._author.bio}</p>
-                    <ul>
-                        <li>${this._author.group}</li>
-                        <li>${this._author.hobby}</li>
-                    </ul>
+                    <div class="card-top">
+                        <h5 class="card-title text-center">${this._author.nama}</h5>
+                        <p class="card-text text-center">${this._author.bio}</p>
+                        <ul>
+                            <li>${this._author.group}</li>
+                            <li>${this._author.hobby}</li>
+                        </ul>
+                    </div>
                     <hr>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 d-grid gap-2">
