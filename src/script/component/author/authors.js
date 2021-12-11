@@ -15,16 +15,16 @@ class AuthorDev extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="card border-0 h-100 pt-5">
-            <!-- <img src="" class="card-team" alt="Foto Profile"> -->
-            <svg class="bd-placeholder-img card-team" xmlns="http://www.w3.org/2000/svg" role="img"
+            <img src="${this._author.img}" class="card-team" alt="Foto Profile ${this._author.name}">
+            <!--<svg class="bd-placeholder-img card-team" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
                 <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
+            </svg> -->
             <div class="card-body shadow">
                 <div class="card-item">
                     <div class="card-top">
-                        <h5 class="card-title text-center">${this._author.nama}</h5>
+                        <h5 class="card-title text-center">${this._author.name}</h5>
                         <p class="card-text text-center">${this._author.bio}</p>
                         <ul>
                             <li>${this._author.group}</li>
