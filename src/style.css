@@ -119,7 +119,9 @@
     background-color: #182d35 !important;
 }
 
-#btn-predict {
+#btn-predict,
+#btn-predict:disabled,
+#btn-predict[disabled] {
     background-color: #2a9d8f !important;
     border: 0;
 }

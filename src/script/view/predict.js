@@ -25,10 +25,18 @@ const IMAGENET_CLASSES = {
 	11: 'White Glass',
 };
 
-async function classify(image) {
+async function classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, classifiedName) {
+
+	setTimeout(() => {
+		spinnerGrow.classList.add('d-none');
+		btnPredict.disabled = false;
+		classifiedIcon.classList.remove('d-none');
+		classifiedName.classList.remove('d-none');
+	}, 3000);
+
 	// action for the submit button
 	let tensorImg = tf.browser
-		.fromPixels(image)
+		.fromPixels(imgClassified)
 		.resizeNearestNeighbor([224, 224])
 		.toFloat()
 		.expandDims();

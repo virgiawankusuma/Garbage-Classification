@@ -19,6 +19,9 @@ const main = () => {
 	const imgClassified = document.querySelector('#img-classified');
 	const filename = document.querySelector('.file-name');
 
+	const classifiedIcon = document.querySelector('.file-name-classified-icon');
+	const classifiedName = document.querySelector('.file-name-classified-name');
+
 	const regEx = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
 
 	btnUpload.addEventListener('click', () => {
@@ -28,6 +31,7 @@ const main = () => {
 	btnDefault.addEventListener('change', function () {
 		const file = this.files[0];
 		if (file) {
+			window.location = '/#hasil-klasifikasi';
 			const reader = new FileReader();
 			reader.onload = () => {
 				const result = reader.result;
@@ -37,6 +41,7 @@ const main = () => {
 			console.log(btnDefault.value);
 			btnCancel.addEventListener('click', () => {
 				window.location = '/#klasifikasikan';
+
 				imgClassify.src = '';
 				wrapper1.classList.remove('actived');
 				btnDefault.value = '';
@@ -45,6 +50,8 @@ const main = () => {
 				imgClassified.src = '';
 				wrapper2.classList.remove('actived');
 				wrapper2.classList.remove('border-0');
+				classifiedIcon.classList.add('d-none');
+				classifiedName.classList.add('d-none');
 			});
 			reader.readAsDataURL(file);
 		}
@@ -55,11 +62,18 @@ const main = () => {
 
 		btnPredict.addEventListener('click', function () {
 			window.location = '/#hasil-klasifikasi';
+
 			wrapper2.classList.add('actived');
 			wrapper2.classList.add('border-0');
 			imgClassified.src = imgClassify.src;
+			const spinnerGrow = document.querySelector('.spinner-grow');
+			spinnerGrow.classList.remove('d-none');
+			btnPredict.disabled = true;
 
-			classify(imgClassified);
+			classifiedIcon.classList.add('d-none');
+			classifiedName.classList.add('d-none');
+
+			classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, classifiedName);
 		});
 	});
 };

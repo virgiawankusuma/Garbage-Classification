@@ -19,8 +19,9 @@ class ClassifyImg extends HTMLElement {
                     </div>
                 </div>
                 <div class="file-name">
-                    <p><i class="fas fa-trash-alt"></i></p>
-                    <span>Jenis sampah <b id='jensam'>[...]</b></span>
+                    <div class="spinner-grow text-light d-none" style="width: 100px; height: 100px;" role="status"></div>
+                    <p class="file-name-classified-icon d-none"><i class="fas fa-trash-alt"></i></p>
+                    <span class="file-name-classified-name d-none">Jenis sampah <b id='jensam'>[...]</b></span>
                 </div>
             </div>
         </button>
