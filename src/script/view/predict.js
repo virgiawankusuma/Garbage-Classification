@@ -7,7 +7,7 @@ async function init() {
 	model = await tf.loadLayersModel(
 		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/model.json'
 	);
-	model = await tf.loadLayersModel(
+	model = await tf.loadGraphModel(
 		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/json/model.json'
 	);
 	console.log('model loaded..');
