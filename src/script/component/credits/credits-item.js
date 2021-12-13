@@ -15,7 +15,7 @@ class CreditItem extends HTMLElement {
 	render() {
 		this.innerHTML = `
 		<li>${this._credit.title} &mdash;
-			<a href="${this._credit.link}" target="_blank">${this._credit.hyperlink} </a>
+			<a href="${this._credit.link}" target="_blank">${this._credit.text} </a>
 		</li>
         `;
 	}

@@ -41,6 +41,7 @@ const main = () => {
 			console.log(btnDefault.value);
 			btnCancel.addEventListener('click', () => {
 				// window.location = '#klasifikasikan';
+				window.location.reload();
 
 				imgClassify.src = '';
 				wrapper1.classList.remove('actived');

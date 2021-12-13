@@ -20,7 +20,7 @@
 }
 
 .jumbotron {
-    height: 100vh;
+    height: 100%;
     background-color: #264653;
     color: #ffffff;
 }
