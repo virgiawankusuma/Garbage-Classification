@@ -3,10 +3,6 @@ import * as tf from '@tensorflow/tfjs';
 let model;
 async function init() {
 	console.log('model loading..');
-	model = undefined;
-	model = await tf.loadLayersModel(
-		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/model.json'
-	);
 	model = await tf.loadGraphModel(
 		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/json/model.json'
 	);

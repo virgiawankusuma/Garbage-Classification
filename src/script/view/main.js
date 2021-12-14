@@ -31,7 +31,6 @@ const main = () => {
 	btnDefault.addEventListener('change', function () {
 		const file = this.files[0];
 		if (file) {
-			// window.location = '#hasil-klasifikasi';
 			const reader = new FileReader();
 			reader.onload = () => {
 				const result = reader.result;
@@ -40,7 +39,6 @@ const main = () => {
 			};
 			console.log(btnDefault.value);
 			btnCancel.addEventListener('click', () => {
-				// window.location = '#klasifikasikan';
 				window.location.reload();
 
 				imgClassify.src = '';
@@ -62,8 +60,6 @@ const main = () => {
 		}
 
 		btnPredict.addEventListener('click', function () {
-			// window.location = '#hasil-klasifikasi';
-
 			wrapper2.classList.add('actived');
 			wrapper2.classList.add('border-0');
 			imgClassified.src = imgClassify.src;
