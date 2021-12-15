@@ -53,8 +53,21 @@ async function classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, 
 		.slice(0, 5);
 
 	console.log(JSON.stringify(results));
+
+	let trashTypes;
+	switch (results[0].className) {
+		case 'Biological':
+		case 'Paper':
+		case 'Cardboard':
+			trashTypes = 'Organik'
+			break;
+
+		default:
+			trashTypes = 'Anorganik'
+			break;
+	}
 	const jensam = document.getElementById('jensam');
-	jensam.innerText = `[${results[0].className}]`;
+	jensam.innerText = `[${results[0].className}][${trashTypes}]`;
 }
 
 export { init, classify };
