@@ -19,19 +19,14 @@ const data = [
 		link: 'https://fontawesome.com',
 		text: 'Font Awesome 5.15.4',
 	},
-	// {
-	// 	title: 'Gambar 1',
-	// 	link: 'https://unsplash.com/photos/_j-EIqIysGM',
-	// 	text: 'Bin Unsplash by @badenabroad',
-	// },
 	{
 		title: 'Gambar 1',
 		link: '#tim-pengembang',
-		text: '12 Types of Trash by Virgiawan',
+		text: '12 Types of Trash by Tim Pengembang',
 	},
 	{
 		title: 'Gambar 2',
-		link: 'https://unsplash.com/photos/_j-EIqIysGM',
+		link: 'https://www.freepik.com/free-vector/programmer-working-flat-style_4911013.htm#page=1&query=developer&position=0&from_view=search',
 		text:
 			'Programmer working in flat style Free Vector Freepick by @pikisuperstar',
 	},
