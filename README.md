@@ -6,7 +6,7 @@ Dibuat dengan model ***CNN (Convolutional Neural Network)*** yang merupakan jeni
 
 ---
 
-![Project Preview]()
+![Project Preview](preview.gif)
 
 ---
 
