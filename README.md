@@ -1,6 +1,6 @@
 <h1 align=center>Garbage Classification | <a href="https://csd-114.netlify.app/">Demo</a></h1>
 
-> Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.  
+> **Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification):** Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.  
 
 Dibuat dengan model ***CNN (Convolutional Neural Network)*** yang merupakan jenis algoritma Deep Learning yang paling umum diterapkan untuk menganalisis citra visual dan ***Tensorflow JS*** sebagai library JavaScript untuk mendeploy model Machine Learning.
 
