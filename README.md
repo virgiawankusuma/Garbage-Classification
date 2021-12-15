@@ -2,7 +2,13 @@
 
 > **Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification):** Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.  
 
-Dibuat dengan model ***CNN (Convolutional Neural Network)*** yang merupakan jenis algoritma Deep Learning yang paling umum diterapkan untuk menganalisis citra visual dan ***Tensorflow JS*** sebagai library JavaScript untuk mendeploy model Machine Learning.
+Dibuat dengan model ***CNN (Convolutional Neural Network)*** yang merupakan jenis algoritma Deep Learning yang paling umum diterapkan untuk menganalisis citra visual.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/virgiawankusuma/API/master/layers.png" height="300px" alt="Layer Preview Image" title="Layer Preview"/>
+</p>
+
+***Tensorflow JS*** sebagai library JavaScript untuk mendeploy model Machine Learning ke Web.
 
 ---
 
