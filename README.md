@@ -6,7 +6,13 @@ Dibuat dengan model ***CNN (Convolutional Neural Network)*** yang merupakan jeni
 
 ---
 
-![Project Preview](preview.gif)
+<p align="center">
+  <img src="preview.gif" alt="Project Preview image" title="Project Preview"/>
+</p>
+<br>
+<p align="center">
+  <img src="preview-mobile.gif" alt="Project Preview Mobile image" title="Project Preview mobile"/>
+</p>
 
 ---
 
