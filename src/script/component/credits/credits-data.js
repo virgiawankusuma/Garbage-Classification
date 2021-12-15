@@ -27,8 +27,12 @@ const data = [
 	{
 		title: 'Gambar 2',
 		link: 'https://www.freepik.com/free-vector/programmer-working-flat-style_4911013.htm#page=1&query=developer&position=0&from_view=search',
-		text:
-			'Programmer working in flat style Free Vector Freepick by @pikisuperstar',
+		text: 'Programmer working in flat style Free Vector Freepick by @pikisuperstar',
+	},
+	{
+		title: 'Hosting Platform',
+		link: 'https://vercel.com/',
+		text: 'Vercel',
 	},
 ];
 
