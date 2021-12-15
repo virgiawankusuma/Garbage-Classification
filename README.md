@@ -1,6 +1,6 @@
-<h1 align=center>Garbage Classification | <a href="https://csd-114.netlify.app/">Demo</a></h1>
+<h1 align=center>Garbage Classification | <a href="https://csd-114.vercel.app/">Demo</a></h1>
 
-> Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.  
+> **Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification):** Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.  
 
 Dibuat dengan model ***CNN (Convolutional Neural Network)*** yang merupakan jenis algoritma Deep Learning yang paling umum diterapkan untuk menganalisis citra visual dan ***Tensorflow JS*** sebagai library JavaScript untuk mendeploy model Machine Learning.
 
@@ -38,4 +38,4 @@ Capstone Project SIB Dicoding Team ID: **CSD-114**
 - Icon Toolkit &mdash; **[Font Awesome 5.15.4](https://fontawesome.com)**
 - Gambar 1 &mdash; **12 Types of Trash by Tim Pengembang**
 - Gambar 2 &mdash; **[Programmer working in flat style Free Vector Freepick by @pikisuperstar](https://www.freepik.com/free-vector/programmer-working-flat-style_4911013.htm#page=1&query=developer&position=0&from_view=search)**
-- Hosting Platform &mdash; **[Netlify](https://www.netlify.com/) | [Vercel](https://vercel.com/)**
+- Hosting Platform &mdash; **[Vercel](https://vercel.com/) | [Netlify](https://www.netlify.com/)**
