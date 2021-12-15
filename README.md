@@ -44,4 +44,4 @@ Capstone Project SIB Dicoding Team ID: **CSD-114**
 - Icon Toolkit &mdash; **[Font Awesome 5.15.4](https://fontawesome.com)**
 - Gambar 1 &mdash; **12 Types of Trash by Tim Pengembang**
 - Gambar 2 &mdash; **[Programmer working in flat style Free Vector Freepick by @pikisuperstar](https://www.freepik.com/free-vector/programmer-working-flat-style_4911013.htm#page=1&query=developer&position=0&from_view=search)**
-- Hosting Platform &mdash; **[Vercel](https://vercel.com/) | [Netlify](https://www.netlify.com/)**
+- Hosting Platform &mdash; **[Vercel](https://vercel.com/)**
