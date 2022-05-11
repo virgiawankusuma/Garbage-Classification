@@ -4,7 +4,8 @@ let model;
 async function init() {
 	console.log('model loading..');
 	model = await tf.loadGraphModel(
-		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/json/model.json'
+		// 'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/json/model.json'
+		'https://raw.githubusercontent.com/tnnz20/Garbage-Classification/master/model/saved_json/model.json'
 	);
 	console.log('model loaded..');
 }
@@ -24,8 +25,13 @@ const IMAGENET_CLASSES = {
 	11: 'White Glass',
 };
 
-async function classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, classifiedName) {
-
+async function classify(
+	imgClassified,
+	btnPredict,
+	spinnerGrow,
+	classifiedIcon,
+	classifiedName
+) {
 	setTimeout(() => {
 		spinnerGrow.classList.add('d-none');
 		btnPredict.disabled = false;
@@ -59,11 +65,11 @@ async function classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, 
 		case 'Biological':
 		case 'Paper':
 		case 'Cardboard':
-			trashTypes = 'Organik'
+			trashTypes = 'Organik';
 			break;
 
 		default:
-			trashTypes = 'Anorganik'
+			trashTypes = 'Anorganik';
 			break;
 	}
 	const jensam = document.getElementById('jensam');
