@@ -25,8 +25,13 @@ const IMAGENET_CLASSES = {
 	11: 'White Glass',
 };
 
-async function classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, classifiedName) {
-
+async function classify(
+	imgClassified,
+	btnPredict,
+	spinnerGrow,
+	classifiedIcon,
+	classifiedName
+) {
 	setTimeout(() => {
 		spinnerGrow.classList.add('d-none');
 		btnPredict.disabled = false;
@@ -60,11 +65,11 @@ async function classify(imgClassified, btnPredict, spinnerGrow, classifiedIcon, 
 		case 'Biological':
 		case 'Paper':
 		case 'Cardboard':
-			trashTypes = 'Organik'
+			trashTypes = 'Organik';
 			break;
 
 		default:
-			trashTypes = 'Anorganik'
+			trashTypes = 'Anorganik';
 			break;
 	}
 	const jensam = document.getElementById('jensam');
