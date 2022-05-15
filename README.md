@@ -2,7 +2,7 @@
 
 > **Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification):** Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.
 
-Model Garbage Classifciation dilatih menggunakan `pre-trained model` [MobileNetV2]('https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2') dengan beberapa improvement
+Model Garbage Classifciation dilatih menggunakan `pre-trained model` [MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2) dengan beberapa improvement
 
 **_Tensorflow JS_** sebagai library JavaScript untuk mendeploy model Machine Learning ke Web.
 
