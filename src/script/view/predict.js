@@ -4,8 +4,7 @@ let model;
 async function init() {
 	console.log('model loading..');
 	model = await tf.loadGraphModel(
-		// 'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/json/model.json'
-		'https://raw.githubusercontent.com/tnnz20/Garbage-Classification/master/model/saved_json/model.json'
+		'https://raw.githubusercontent.com/virgiawankusuma/Garbage-Classification/master/model/json/model.json'
 	);
 	console.log('model loaded..');
 }
