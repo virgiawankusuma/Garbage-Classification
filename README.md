@@ -9,11 +9,11 @@ Model Garbage Classifciation dilatih menggunakan `pre-trained model` [MobileNetV
 ---
 
 <p align="center">
-  <img src="assets/preview.gif" alt="Project Preview image" title="Project Preview"/>
+  <img src="public/img/preview.gif" alt="Project Preview image" title="Project Preview"/>
 </p>
 <br>
 <p align="center">
-  <img src="assets/preview-mobile.gif" alt="Project Preview Mobile image" title="Project Preview mobile"/>
+  <img src="public/img/preview-mobile.gif" alt="Project Preview Mobile image" title="Project Preview mobile"/>
 </p>
 
 ---
