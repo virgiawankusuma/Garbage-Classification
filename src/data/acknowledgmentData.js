@@ -1,8 +1,8 @@
 const hero =
 {
-  title: 'Acknowledgement',
+  title: 'Acknowledgment',
   subtitle: 'Terima kasih kepada para kontributor, sumber, dan teknologi yang telah membantu dalam pembuatan aplikasi ini.',
-  img: '/img/acknowledgement-hero.webp',
+  img: '/img/acknowledgment-hero.webp',
 };
 
 
