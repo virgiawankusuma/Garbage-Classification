@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white absolute top-0 left-0 w-full flex items-center z-10">
+    <header className="bg-white absolute top-0 left-0 w-full flex items-center z-10 justify-center">
       <div className="container md:mx-12 lg:mx-20">
         <div className="flex items-center justify-between relative">
           <div className="px-4">

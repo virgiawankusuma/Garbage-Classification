@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       <Header />
       <main 
         id="content" 
-        className="z-20 mt-20 md:mx-12 lg:mx-20 px-4"
+        className="z-20 mt-20 md:mx-12 lg:mx-20"
       >
         {children}
       </main>
