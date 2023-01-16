@@ -15,7 +15,7 @@ export default function HeroRight({ heroData }) {
             playsInline
             className="w-[85%] h-auto rounded-xl shadow-xl"
           >
-            <source src={heroData.video} type="video/mp4" />
+            <source src={heroData.video} type="video/webm" />
           </video>
         </div>
       </div>
