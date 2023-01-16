@@ -10,8 +10,8 @@ const hero =
 
 const about = {
   title: 'Apa itu Garbage Classification?',
-  desc: 'Aplikasi ini merupakan aplikasi yang mengintegrasikan model Machine Learning <b>Image Classification</b> secara End-to-End untuk memberikan klasifikasi 12 jenis sampah yang mudah dipahami bagi pengguna tanpa harus menjalankan model Machine Learning pada Kode Notebook Python.',
-  image: '',
+  desc: 'Aplikasi ini merupakan aplikasi yang mengintegrasikan model Machine Learning Image Classification secara End-to-End untuk memberikan klasifikasi 12 jenis sampah yang mudah dipahami bagi pengguna tanpa harus menjalankan model Machine Learning pada Kode Notebook Python.',
+  image: '/img/about-illustration.webp',
 };
 
 const steps =

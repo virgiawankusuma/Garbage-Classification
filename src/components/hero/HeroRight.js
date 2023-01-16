@@ -5,7 +5,7 @@ export default function HeroRight({ heroData }) {
         <div className="relative w-full mt-10 lg:mt-0 lg:right-0">
           <img 
             src={heroData.image}
-            className="absolute scale-[65%] top-[40%] right-[12%] translate-x-1/2"
+            className="absolute scale-[45%] top-1/3 right-[12%] translate-x-1/2 md:top-[40%] md:scale-50 lg:scale-[65%]"
             alt="Robot"
           />
           <video
