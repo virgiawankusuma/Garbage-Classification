@@ -10,3 +10,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm drop-shadow;
+}
+
+.nav-link{
+  @apply text-base text-dark py-2 mx-6 flex lg:mx-4;
+}
+
+.nav-link:hover {
+  @apply hover:text-primary hover:underline hover:decoration-secondary hover:decoration-2 hover:underline-offset-8 transition-all duration-300 ease-in-out;
+}
+
+.nav-link.active {
+  @apply text-primary font-medium underline decoration-secondary decoration-2 underline-offset-8 transition-all duration-300 ease-in-out;
+}
+
+.btn-link{
+  @apply text-base text-white py-2 mx-6 px-4 bg-primary/90 rounded hover:bg-primary/100 transition-all duration-200 ease-in-out lg:mx-4;
+}
+
+.btn-link.active {
+  @apply bg-primary/100;
+}
+
+@layer components {
+  .hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-dark
+  }
+}
+
+@layer utilities {
+  .hamburger-active> span:nth-child(1) {
+    @apply rotate-45;
+  }
+  .hamburger-active> span:nth-child(2) {
+    @apply scale-0;
+  }
+  .hamburger-active> span:nth-child(3) {
+    @apply -rotate-45;
+  }
+}

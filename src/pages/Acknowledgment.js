@@ -1,7 +1,11 @@
+import Layout from '../components/Layout';
+
 export default function Acknowledgment() {
   return (
-    <>
-      <h1>Acknowledgment</h1>
-    </>
+    <Layout>
+      <div className="container">
+        Acknowledgment
+      </div>
+    </Layout>
   );
 }
