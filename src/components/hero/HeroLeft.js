@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function HeroLeft({ heroData }) {
   return (
     <>
-      <div className="w-full self-center pl-4 pr-12 lg:w-1/2">
+      <div className="w-full self-center px-4 lg:pl-4 lg:pr-8 lg:w-1/2">
         <h1 className="font-bold text-primary text-4xl mb-4 lg:text-6xl">
           {heroData.title}
         </h1>
