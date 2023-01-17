@@ -17,33 +17,33 @@ const about = {
 const steps =
 {
   title: 'Bagaimana cara menggunakannya?',
-  stepsBody: () => ([
+  stepsBody: [
     {
       id: 0,
       title: 'Pilih Gambar',
-      desc: 'Pilih gambar sampah yang ingin diklasifikasikan',
+      desc: 'Pilih gambar sampah yang ingin diklasifikasikan.',
       image: '/img/steps/input.webp',
     },
     {
       id: 1,
       title: 'Klasifikasikan',
-      desc: 'Model Machine Learning akan mengklasifikasikan sampah yang dipilih berdasarkan 12 jenis sampah',
-      image: '/img/steps/clasify.webp',
+      desc: 'Model Machine Learning akan mengklasifikasikan sampah yang dipilih berdasarkan 12 jenis sampah.',
+      image: '/img/steps/classify.webp',
     },
     {
       id: 2,
       title: 'Hasil Klasifikasi',
-      desc: 'Hasil klasifikasi akan ditampilkan berupa jenis dan kategori sampah, serta persentase kecocokan',
+      desc: 'Hasil klasifikasi akan ditampilkan berupa jenis dan kategori sampah, serta persentase kecocokan.',
       image: '/img/steps/result.webp',
     }
-  ])
+  ]
 };
 
 const featured = 
 {
   title: 'Keunggulan Aplikasi',
   subtitle: 'Aplikasi ini memiliki beberapa fitur yang dapat membantu pengguna dalam mengklasifikasikan sampah',
-  features: () => ([
+  features: [
     {
       id: 0,
       title: 'Klasifikasi 12 Jenis Sampah',
@@ -62,7 +62,7 @@ const featured =
       desc: 'Aplikasi ini mengintegrasikan model Machine Learning secara End-to-End sehingga pengguna tidak perlu menginstall Python dan menjalankan model Machine Learning pada Kode Notebook Python.',
       image: '/img/featured/end-to-end.webp',
     },
-  ])
+  ]
 };
 
 const footer =

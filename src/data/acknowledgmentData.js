@@ -9,7 +9,7 @@ const hero =
 const contributors =
 {
   title: 'Kontributor',
-  developers: () => ([
+  developers: [
     {
       id: 0,
       name: 'Virgiawan Teguh Kusuma',
@@ -32,14 +32,14 @@ const contributors =
         github: 'https://github.com/tnnz20'
       }
     }
-  ])
+  ]
 };
 
 const techStack =
 {
   title: 'Teknologi yang Digunakan',
   desc: 'Aplikasi ini buat dengan menggunakan beberapa teknologi yang dapat membantu dalam proses pembuatan',
-  techs: () => ([
+  techs: [
     {
       id: 0,
       name: 'Python',
@@ -145,14 +145,14 @@ const techStack =
       image: '/img/techstack/figma.webp',
       url: 'https://www.figma.com/'
     },
-  ])
+  ]
 };
 
 const credits =
 {
   title : 'Sumber Daya Lainnya',
   desc: 'Beberapa sumber daya lainnya yang dapat membantu dalam pembuatan aplikasi ini.',
-  resources: ()=> ([
+  resources: [
     {
       title: 'Datasets',
       text: 'Kaggle Garbage Classification (12 classes)',
@@ -178,7 +178,7 @@ const credits =
       text: 'Icons8',
       url: 'https://icons8.com/illustrations',
     },
-  ])
+  ]
 }
 
 export { hero, contributors, techStack, credits };
