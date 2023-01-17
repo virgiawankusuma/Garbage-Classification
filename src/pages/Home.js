@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/hero/Hero';
 import About from '../components/aboutSection/About';
 import Steps from '../components/stepsSection/Steps';
+import Featured from '../components/featuredSection/Featured';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Steps />
+      <Featured />
     </Layout>
   );
 }

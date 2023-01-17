@@ -1,7 +1,7 @@
 const hero =
 {
   title: 'Garbage Classification',
-  subtitle: 'Klasifikasi sampah 12 jenis dengan Machine Learning End-to-End',
+  subtitle: 'Klasifikasi sampah 12 jenis dengan Machine Learning End-to-End.',
   desc: 'Aplikasi yang mengintegrasikan model Machine Learning Image Classification untuk klasifikasi 12 jenis sampah secara End-to-End bagi pengguna.',
   video: '/video/hero.webm',
   image: '/img/hero.webp',
@@ -42,12 +42,12 @@ const steps =
 const featured = 
 {
   title: 'Keunggulan Aplikasi',
-  subtitle: 'Aplikasi ini memiliki beberapa fitur yang dapat membantu pengguna dalam mengklasifikasikan sampah',
+  subtitle: 'Aplikasi ini memiliki beberapa fitur yang dapat membantu pengguna dalam mengklasifikasikan sampah.',
   features: [
     {
       id: 0,
       title: 'Klasifikasi 12 Jenis Sampah',
-      desc: 'Aplikasi ini dapat mengklasifikasikan sampah menjadi 12 jenis dan kategori sampah, serta persentase kecocokan',
+      desc: 'Aplikasi ini dapat mengklasifikasikan sampah menjadi 12 jenis dan kategori sampah, serta persentase kecocokan.',
       image: '/img/featured/12-types-of-trash.webp',
     },
     {
