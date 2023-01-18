@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="flex flex-wrap text-center text-white text-sm gap-y-3 md:justify-between">
           <p className="w-full md:w-auto">{footer.copy}</p>
           <a 
-            href={footer.viewOnGithub.url} 
-            target="_blank" 
+            href={footer.viewOnGithub.url}
+            target="_blank"
             rel="noreferrer"
             className="w-full underline font-light hover:text-primary hover:decoration-secondary md:w-auto transition-all duration-200 ease-in-out"
           >
