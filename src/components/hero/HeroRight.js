@@ -1,10 +1,10 @@
-export default function HeroRight({ heroData }) {
+export default function HeroRight({ hero }) {
   return (
     <>
       <div className="w-full px-4 lg:w-1/2">
         <div className="relative w-full mt-10 lg:mt-0 lg:right-0">
           <img 
-            src={heroData.image}
+            src={hero.image}
             className="absolute scale-[45%] top-1/3 right-[12%] translate-x-1/2 md:top-[40%] md:scale-50 lg:scale-[65%]"
             alt="Robot"
           />
@@ -15,7 +15,7 @@ export default function HeroRight({ heroData }) {
             playsInline
             className="w-[85%] h-auto rounded-xl shadow-xl"
           >
-            <source src={heroData.video} type="video/webm" />
+            <source src={hero.video} type="video/webm" />
           </video>
         </div>
       </div>

@@ -1,11 +1,10 @@
 import Layout from '../components/Layout';
+import Hero from '../components/heroAcknowledgment/Hero';
 
 export default function Acknowledgment() {
   return (
     <Layout>
-      <div className="container">
-        Acknowledgment
-      </div>
+      <Hero />
     </Layout>
   );
 }

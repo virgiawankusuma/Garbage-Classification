@@ -8,8 +8,8 @@ export default function Hero() {
     <section id="hero" className="pt-10">
       <div className="container">
         <div className="flex flex-wrap">
-          <HeroLeft heroData={hero}/>
-          <HeroRight heroData={hero} />
+          <HeroLeft hero={hero}/>
+          <HeroRight hero={hero} />
         </div>
       </div>
     </section>
