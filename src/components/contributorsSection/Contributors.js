@@ -3,7 +3,7 @@ import Developer from './Developer';
 
 export default function Contributors(){
   return (
-    <section id="contributors" className="py-36">
+    <section id="contributors" className="pt-36">
       <div className="container">
         <div className="flex flex-wrap justify-center px-4">
           <h2 className="text-2xl text-dark font-bold text-center w-full mb-8 md:mb-12 md:text-3xl lg:text-5xl">
