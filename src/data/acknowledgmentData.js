@@ -151,7 +151,7 @@ const techStack =
 const credits =
 {
   title : 'Sumber Daya Lainnya',
-  desc: 'Beberapa sumber daya lainnya yang dapat membantu dalam pembuatan aplikasi ini.',
+  subtitle: 'Beberapa sumber daya lainnya yang dapat membantu dalam pembuatan aplikasi ini.',
   resources: [
     {
       title: 'Datasets',
