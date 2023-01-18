@@ -16,7 +16,7 @@ export default function Navbar({ isHamburgerOpen }) {
         </NavLink>
         <NavLink 
           to="/acknowledgment" 
-          className="nav-link mb-3 md:mb-0"
+          className="nav-link mb-3 lg:mb-0"
           activeclassname="nav-link active"
           >
             Acknowledgment

@@ -1,7 +1,7 @@
 const hero =
 {
   title: 'Acknowledgment',
-  subtitle: 'Terima kasih kepada para kontributor, sumber, dan teknologi yang telah membantu dalam pembuatan aplikasi ini.',
+  subtitle: 'Terima kasih kepada para kontributor, teknologi, dan sumber daya yang  membantu dalam pembuatan aplikasi ini.',
   image: '/img/acknowledgment-hero.webp',
 };
 
@@ -38,7 +38,7 @@ const contributors =
 const techStack =
 {
   title: 'Teknologi yang Digunakan',
-  desc: 'Aplikasi ini buat dengan menggunakan beberapa teknologi yang dapat membantu dalam proses pembuatan',
+  subtitle: 'Aplikasi ini buat dengan menggunakan beberapa teknologi yang dapat membantu dalam proses pembuatan.',
   techs: [
     {
       id: 0,

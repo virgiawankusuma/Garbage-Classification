@@ -59,7 +59,7 @@ const featured =
     {
       id: 2,
       title: 'End-to-End',
-      desc: 'Aplikasi ini mengintegrasikan model Machine Learning secara End-to-End sehingga pengguna tidak perlu menginstall Python dan menjalankan model Machine Learning pada Kode Notebook Python.',
+      desc: 'Aplikasi ini mengintegrasikan model Machine Learning secara End-to-End berbasis Web, sehingga pengguna tidak perlu menginstall Python dan menjalankan model Machine Learning pada Kode Notebook Python.',
       image: '/img/featured/end-to-end.webp',
     },
   ]
