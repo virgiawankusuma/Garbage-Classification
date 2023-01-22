@@ -1,11 +1,10 @@
 import Layout from '../components/Layout';
+import Classification from '../components/classifySection/Classification';
 
 export default function Classify() {
   return (
     <Layout>
-      <div className="container">
-        klasifikasikan
-      </div>
+      <Classification />
     </Layout>
   );
 }
