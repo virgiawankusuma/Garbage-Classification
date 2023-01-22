@@ -1,6 +1,14 @@
+import { useContext } from 'react';
 import { FaImage } from 'react-icons/fa';
+import { AppContext } from '../../../context/app-context';
 
-export default function ImageInput({ classify, imageUploadHandler }) {
+export default function ImageInput() {
+  const context = useContext(AppContext);
+  const {
+    classify,
+    imageUploadHandler,
+  } = context;
+
   return (
     <label htmlFor="input-image">
       <div className="h-72 border border-dark border-dashed overflow-hidden rounded-lg flex items-center cursor-pointer">

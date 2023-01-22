@@ -1,13 +1,17 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { classify } from '../../data/classifyData';
-import ClassifyImage from './ClassifyImage';
-import ClassifyResult from './ClassifyResult';
+import ClassifyImage from './ClassifyImage/ClassifyImage';
+import ClassifyResult from './ClassifyResult/ClassifyResult';
+import { AppContext } from '../../context/app-context';
 
 export default function Classification() {
   const [file, setFile] = useState(null);
   const [image, setImage] = useState(null);
   const [results, setResults] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const imageRef = useRef(null);
 
   const imageUploadHandler = (e) => {
     const file = e.target.files[0];
@@ -23,9 +27,29 @@ export default function Classification() {
     }
   };
 
-  // console.log(`ini hasilnya: ${results}`);
+  const deleteImageHandler = () => {
+    imageRef.current.value = '';
+    setResults(null);
+    setFile(null);
+  };
+
+  const AppContextValue = {
+    classify,
+    file,
+    setFile,
+    image,
+    setImage,
+    imageRef,
+    results,
+    setResults,
+    isLoading,
+    setIsLoading,
+    imageUploadHandler,
+    deleteImageHandler
+  };
 
   return(
+    <AppContext.Provider value={AppContextValue}>
     <section id="techstacks" className="pt-10 pb-36 min-h-screen">
       <div className="container ">
         <div className="flex flex-wrap justify-center px-4">
@@ -37,23 +61,16 @@ export default function Classification() {
           </p>
           <div className="w-full flex flex-wrap justify-center gap-6 lg:gap-x-12">
             <ClassifyImage 
-              classify={classify}
-              imageUploadHandler={imageUploadHandler}
-              isFile={file}
-              setFile={setFile}
-              image={image}
-              setResults={setResults}
+              file={file}
             />
 
             {results && (
-              <ClassifyResult
-                results={results}
-                image={image}
-              />
+              <ClassifyResult />
             )}
           </div>
         </div>
       </div>
     </section>
+    </AppContext.Provider>
   )
 }
