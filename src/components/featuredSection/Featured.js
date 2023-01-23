@@ -3,7 +3,11 @@ import FeaturedBody from './FeaturedBody';
 
 export default function Featured() {
   return (
-    <section id="featured" className="py-36">
+    <section 
+      id="featured" 
+      className="py-36"
+      tabIndex="5"
+    >
       <div className="container">
         <div className="flex flex-wrap justify-center">
           <h2 className="text-2xl text-dark font-bold text-center w-full mb-6 md:text-3xl lg:text-5xl">

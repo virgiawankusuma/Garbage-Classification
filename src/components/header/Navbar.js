@@ -11,6 +11,8 @@ export default function Navbar({ isHamburgerOpen }) {
           to="/" 
           className="nav-link"
           activeclassname="nav-link active"
+          title="Tombol menu beranda"
+          aria-label="Tombol menu beranda"
           >
             Beranda
         </NavLink>
@@ -18,6 +20,8 @@ export default function Navbar({ isHamburgerOpen }) {
           to="/acknowledgment" 
           className="nav-link mb-3 lg:mb-0"
           activeclassname="nav-link active"
+          title="Tombol menu pengakuan"
+          aria-label="Tombol menu pengakuan"
           >
             Acknowledgment
         </NavLink>
@@ -25,6 +29,8 @@ export default function Navbar({ isHamburgerOpen }) {
           to="/klasifikasikan" 
           className="btn-link"
           activeclassname="btn-link active"
+          title="Tombol menu klasifikasikan"
+          aria-label="Tombol menu klasifikasikan"
           >
             Mulai Sekarang
         </NavLink>

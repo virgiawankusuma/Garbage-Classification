@@ -7,6 +7,8 @@ export default function Resources({ resource }) {
           href={resource.url}
           target="_blank"
           rel="noreferrer"
+          title={`Tombol ${resource.title}`}
+          aria-label={`Tombol ${resource.title}`}
           className="w-full text-sm font-medium underline text-secondary sm:text-base md:text-lg hover:text-primary hover:decoration-secondary"
           >
             {resource.text}

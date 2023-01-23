@@ -3,7 +3,11 @@ import Tech from './Tech';
 
 export default function TechStacks() {
   return(
-    <section id="techstacks" className="pt-36">
+    <section 
+      id="techstacks" 
+      className="pt-36"
+      tabIndex="4"
+    >
       <div className="container">
         <div className="flex flex-wrap justify-center">
           <h2 className="text-2xl text-dark font-bold text-center w-full mb-6 md:text-3xl lg:text-5xl">

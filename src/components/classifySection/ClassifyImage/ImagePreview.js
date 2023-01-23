@@ -30,6 +30,8 @@ export default function ImagePreview() {
       <button 
         className="w-full inline-flex justify-center bg-primary text-white rounded-md mt-2 p-3 hover:brightness-110 hover:shadow-md transition-all duration-200 ease-in-out text-center cursor-pointer"
         onClick={() => classifyModel(imageRef.current, setResults, setIsLoading)}
+        title="Tombol Klasifikasi Gambar"
+        aria-label="Tombol Klasifikasi Gambar"
       >
         {
           isLoading 

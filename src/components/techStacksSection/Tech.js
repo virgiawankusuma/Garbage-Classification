@@ -15,6 +15,8 @@ export default function Tech({ tech }) {
             href={tech.url}
             target="_blank"
             rel="noreferrer"
+            title={`Tombol ${tech.name}`}
+            aria-label={`Tombol ${tech.name}`}
             className="hover:text-primary hover:underline hover:decoration-2 hover:decoration-secondary transition-all duration-200 ease-in-out"
           >
           {tech.name}

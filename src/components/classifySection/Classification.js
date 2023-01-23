@@ -50,27 +50,31 @@ export default function Classification() {
 
   return(
     <AppContext.Provider value={AppContextValue}>
-    <section id="techstacks" className="pt-10 pb-36 min-h-screen">
-      <div className="container ">
-        <div className="flex flex-wrap justify-center px-4">
-          <h2 className="w-full text-2xl text-dark font-bold text-center mb-6 md:text-3xl lg:text-5xl">
-            {classify.title}
-          </h2>
-          <p className="w-full text-dark font-medium text-center mb-10 lg:leading-relaxed lg:w-2/3 lg:text-lg">
-            {classify.subtitle}
-          </p>
-          <div className="w-full flex flex-wrap justify-center gap-6 lg:gap-x-12">
-            <ClassifyImage 
-              file={file}
-            />
+      <section 
+        id="techstacks" 
+        className="pt-10 pb-36 min-h-screen"
+        tabIndex="2"
+      >
+        <div className="container ">
+          <div className="flex flex-wrap justify-center px-4">
+            <h2 className="w-full text-2xl text-dark font-bold text-center mb-6 md:text-3xl lg:text-5xl">
+              {classify.title}
+            </h2>
+            <p className="w-full text-dark font-medium text-center mb-10 lg:leading-relaxed lg:w-2/3 lg:text-lg">
+              {classify.subtitle}
+            </p>
+            <div className="w-full flex flex-wrap justify-center gap-6 lg:gap-x-12">
+              <ClassifyImage 
+                file={file}
+              />
 
-            {results && (
-              <ClassifyResult />
-            )}
+              {results && (
+                <ClassifyResult />
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </AppContext.Provider>
   )
 }

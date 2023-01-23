@@ -13,7 +13,12 @@ export default function HeroLeft({ hero }) {
         <p className="font-medium text-dark text-base mb-10 leading-relaxed lg:text-lg">
           {hero.desc}
         </p>
-        <Link to="/klasifikasikan" className="text-white text-xl font-medium bg-primary rounded px-7 py-3 hover:shadow-xl hover:opacity-80 transition duration-300 ease-out">
+        <Link 
+          to="/klasifikasikan" 
+          className="text-white text-xl font-medium bg-primary rounded px-7 py-3 hover:shadow-xl hover:opacity-80 transition duration-300 ease-out"
+          title="Tombol mulai klasifikasi"
+          aria-label="Tombol mulai klasifikasi"
+        >
           {hero.cta}
         </Link>
       </div>

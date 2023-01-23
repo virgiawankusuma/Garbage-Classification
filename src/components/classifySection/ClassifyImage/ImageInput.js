@@ -26,7 +26,11 @@ export default function ImageInput() {
           hidden 
         />
       </div>
-      <div className="w-full bg-dark text-white rounded-md mt-2 p-3 hover:bg-dark 90 transition-all duration-200 ease-in-out block text-center cursor-pointer">
+      <div 
+        className="w-full bg-dark text-white rounded-md mt-2 p-3 hover:bg-dark 90 transition-all duration-200 ease-in-out block text-center cursor-pointer"
+        title="Tombol Upload Gambar"
+        aria-label="Tombol Upload Gambar"
+      >
         {classify.buttonUpload}
       </div>
     </label>

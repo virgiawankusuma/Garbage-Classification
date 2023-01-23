@@ -4,6 +4,8 @@ export default function HamburgerButton({ isHamburgerOpen, handleHamburgerClick 
     <button 
     className={`block absolute right-4 ${isHamburgerOpen && ' hamburger-active'} lg:hidden`}
     type="button"
+    title="Tombol menu"
+    aria-label="Tombol menu"
     onClick={() => handleHamburgerClick(false)}
     >
       <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
