@@ -1,6 +1,6 @@
 import classifyModel from '../modelHandler';
 import Spinner from '../Spinner';
-import BtnDeleteImage from '../BtnDeleteImage';
+import DeleteImage from '../DeleteImage';
 import { useContext } from 'react';
 import { AppContext } from '../../../context/app-context';
 
@@ -19,7 +19,7 @@ export default function ImagePreview() {
   return (
     <>
       <div className={`h-72 bg-dark border border-dark overflow-hidden rounded-lg flex relative items-center ${isLoading && 'animate-pulse'}`}>
-        <BtnDeleteImage />
+        <DeleteImage />
         <img 
           ref={imageRef}
           src={image}

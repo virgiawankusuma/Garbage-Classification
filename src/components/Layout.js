@@ -1,3 +1,4 @@
+import BackToTop from './BackToTop';
 import Footer from './footer/Footer';
 import Header from './header/Header';
 import SkipToContent from './SkipToContent';
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
+      <BackToTop />
       <Footer />
     </>
   );

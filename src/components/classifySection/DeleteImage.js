@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { AppContext } from '../../context/app-context';
 
-export default function BtnDeleteImage() {
+export default function DeleteImage() {
   const context = useContext(AppContext);
 
   return (
