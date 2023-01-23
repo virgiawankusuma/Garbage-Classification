@@ -4,7 +4,7 @@ import Tech from './Tech';
 export default function TechStacks() {
   return(
     <section 
-      id="techstacks" 
+      id="techStacks" 
       className="pt-36"
       tabIndex="4"
     >
