@@ -9,7 +9,7 @@ export default function Resources({ resource }) {
           rel="noreferrer"
           title={`Tombol ${resource.title}`}
           aria-label={`Tombol ${resource.title}`}
-          className="w-full text-sm font-medium underline text-secondary sm:text-base md:text-lg hover:text-primary hover:decoration-secondary"
+          className="w-full min-h-[44px] min-w-[44px] text-sm font-medium underline text-secondary sm:text-base md:text-lg hover:text-primary hover:decoration-secondary"
           >
             {resource.text}
         </a>

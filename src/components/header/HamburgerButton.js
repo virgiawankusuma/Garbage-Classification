@@ -2,7 +2,7 @@ export default function HamburgerButton({ isHamburgerOpen, handleHamburgerClick 
 
   return (
     <button 
-    className={`block absolute right-4 ${isHamburgerOpen && ' hamburger-active'} lg:hidden`}
+    className={`block absolute right-4 min-h-[44px] min-w-[44px]${isHamburgerOpen && ' hamburger-active'} lg:hidden`}
     type="button"
     title="Tombol menu"
     aria-label="Tombol menu"

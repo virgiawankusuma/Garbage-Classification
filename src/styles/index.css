@@ -20,7 +20,7 @@ body {
 }
 
 .nav-link{
-  @apply text-base text-dark py-2 mx-6 flex lg:mx-4;
+  @apply flex items-center text-base text-dark py-2 mx-6 lg:mx-4 min-h-[44px] min-w-[44px];
 }
 
 .nav-link:hover {
@@ -32,7 +32,7 @@ body {
 }
 
 .btn-link{
-  @apply text-base text-white py-2 mx-6 px-4 bg-primary/90 rounded hover:bg-primary/100 lg:mx-4 hover:shadow-xl hover:opacity-80 transition duration-300 ease-out
+  @apply flex items-center text-base text-white py-2 mx-6 px-4 bg-primary/90 rounded min-h-[44px] min-w-[44px] hover:bg-primary/100 lg:mx-4 hover:shadow-xl hover:opacity-80 transition duration-300 ease-out
 }
 
 .btn-link.active {
@@ -47,12 +47,12 @@ body {
 
 @layer utilities {
   .hamburger-active> span:nth-child(1) {
-    @apply rotate-45;
+    @apply rotate-45 ml-auto;
   }
   .hamburger-active> span:nth-child(2) {
-    @apply scale-0;
+    @apply scale-0 ml-auto;
   }
   .hamburger-active> span:nth-child(3) {
-    @apply -rotate-45;
+    @apply -rotate-45 ml-auto;
   }
 }

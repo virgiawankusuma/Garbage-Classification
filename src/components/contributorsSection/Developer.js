@@ -22,7 +22,7 @@ export default function Developer({ developer }) {
             rel="noreferrer"
             title="Tombol LinkedIn Developer"
             aria-label="Tombol LinkedIn Developer"
-            className="text-2xl text-[#0077B5] hover:text-white hover:bg-[#0077B5] rounded-full p-2 trans transition duration-300 ease-out"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-2xl text-[#0077B5] hover:text-white hover:bg-[#0077B5] rounded-full transition duration-300 ease-out"
           >
             <FaLinkedin />
           </a>
@@ -32,7 +32,7 @@ export default function Developer({ developer }) {
             rel="noreferrer"
             title="Tombol GitHub Developer"
             aria-label="Tombol GitHub Developer"
-            className="text-2xl text-black hover:text-white hover:bg-black rounded-full p-2 transition duration-300 ease-out"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-2xl text-black hover:text-white hover:bg-black rounded-full transition duration-300 ease-out"
           >
             <FaGithub />
           </a>
