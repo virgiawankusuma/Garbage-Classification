@@ -2,7 +2,6 @@ import { Link } from 'react-scroll';
 
 export default function BackToTop() {
   const backToTop = document.querySelector('#backToTop');
-  // make backToTopRef hidden only when user window.pageYOffset > 80
   window.onscroll = () => {
     if (window.pageYOffset > 80) {
       backToTop.classList.remove('hidden');
