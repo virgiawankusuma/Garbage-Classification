@@ -2,10 +2,7 @@ import { about } from '../../data/homeData';
 
 export default function About() {
   return (
-    <section 
-      id="about" 
-      className="pt-36"
-      tabIndex="3"
+    <section id="about" className="pt-36"
     >
       <div className="container">
         <div className="flex flex-wrap justify-center">

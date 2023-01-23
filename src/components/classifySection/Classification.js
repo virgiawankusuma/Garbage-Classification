@@ -50,10 +50,7 @@ export default function Classification() {
 
   return(
     <AppContext.Provider value={AppContextValue}>
-      <section 
-        id="techstacks" 
-        className="pt-10 pb-36 min-h-screen"
-        tabIndex="2"
+      <section id="techstacks" className="pt-10 pb-36 min-h-screen"
       >
         <div className="container ">
           <div className="flex flex-wrap justify-center px-4">

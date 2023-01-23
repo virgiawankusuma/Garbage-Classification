@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <Header />
       <main 
         id="content"
-        tabIndex="1"
+        tabIndex="0"
         className="z-20 mt-20 md:mx-12 lg:mx-20"
       >
         {children}

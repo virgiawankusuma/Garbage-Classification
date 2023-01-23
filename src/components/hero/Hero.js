@@ -5,10 +5,7 @@ import { hero } from '../../data/homeData.js';
 
 export default function Hero() {
   return (
-    <section 
-      id="hero" 
-      className="pt-10"
-      tabIndex="2"
+    <section id="hero" className="pt-10"
     >
       <div className="container">
         <div className="flex flex-wrap">
