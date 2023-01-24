@@ -1,5 +1,5 @@
-import { useContext } from 'react';
 import { FaImage } from 'react-icons/fa';
+import { useContext } from 'react';
 import { AppContext } from '../../../context/app-context';
 
 export default function ImageInput() {
@@ -22,7 +22,7 @@ export default function ImageInput() {
           onChange={imageUploadHandler}
           type="file" 
           id="input-image"
-          accept="image/,.jpg,.jpeg,.png" 
+          accept="image/,.jpg,.jpeg,.png,.svg,.webp"
           hidden 
         />
       </div>

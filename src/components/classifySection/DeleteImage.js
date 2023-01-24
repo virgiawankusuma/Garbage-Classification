@@ -1,5 +1,5 @@
-import { useContext } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import { useContext } from 'react';
 import { AppContext } from '../../context/app-context';
 
 export default function DeleteImage() {
