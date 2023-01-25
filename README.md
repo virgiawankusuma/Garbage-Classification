@@ -9,6 +9,7 @@ Aplikasi yang mengintegrasikan model Machine Learning Image Classification untuk
   <img src="public/img/illustration.gif" alt="illustration" width="100%">
 </p>
 ---
+
 ## Cara Menjalankan 📥
 
 Untuk menjalankan aplikasi di *Local Environment* Anda, cukup lakukan langkah-langkah ini:
