@@ -31,6 +31,7 @@ export default function Classification() {
     imageRef.current.value = '';
     setResults(null);
     setFile(null);
+    setIsLoading(false);
   };
 
   const AppContextValue = {

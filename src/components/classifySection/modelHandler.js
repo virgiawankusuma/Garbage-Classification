@@ -35,14 +35,8 @@ function imageClasses() {
 }
 
 async function classifyModel(image, setResults, setIsLoading) {
-
-  // Mulai loading
   setIsLoading(true);
-
-  // init model dari loadModel()
   const model = await loadModel();
-
-  // init IMAGE_CLASSES
   const IMAGE_CLASSES = imageClasses();
 
 	const tensorImg = tf.browser
@@ -62,10 +56,6 @@ async function classifyModel(image, setResults, setIsLoading) {
     return b.probability - a.probability;
   })
   .slice(0, 3);
-  
-  // const resultsJSON = JSON.stringify(results);
-  // console.log(resultsJSON);
-  // console.log(results);
 
   setResults(results);
   setIsLoading(false);
