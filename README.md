@@ -1,6 +1,6 @@
 <h1 align=center>Garbage Classification | <a href="https://garbageclassification.vercel.app/">Demo</a></h1>
 
-**Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification)**
+**Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification)**.  
 Aplikasi yang mengintegrasikan model Machine Learning Image Classification untuk klasifikasi 12 jenis sampah secara End-to-End bagi pengguna. Pada versi 2.0, aplikasi ini dibangun menggunakan *TensorFlow* dan *React.js*.
 <p align="center">
   <img src="public/img/illustration.gif" alt="illustration" width="100%">
