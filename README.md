@@ -2,14 +2,11 @@
 
 **Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification)**
 Aplikasi yang mengintegrasikan model Machine Learning Image Classification untuk klasifikasi 12 jenis sampah secara End-to-End bagi pengguna. Pada versi 2.0, aplikasi ini dibangun menggunakan *TensorFlow* dan *React.js*.
-
----
-<!-- gif file in public/img -->
 <p align="center">
   <img src="public/img/illustration.gif" alt="illustration" width="100%">
 </p>
----
 
+---
 ## Cara Menjalankan 📥
 
 Untuk menjalankan aplikasi di *Local Environment* Anda, cukup lakukan langkah-langkah ini:
