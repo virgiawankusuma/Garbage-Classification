@@ -67,7 +67,7 @@ const featured =
 
 const footer =
 {
-  copy: '© 2021-2023 Garbage Classification | MBKM B1 Team ID CSD-114. All rights reserved.',
+  copy: '© 2021-2023 Garbage Classification | SIB Dicoding B1 Team ID CSD-114. All rights reserved.',
   viewOnGithub: {
     title: 'View on Github',
     url: 'https://github.com/virgiawankusuma/Garbage-Classification'
