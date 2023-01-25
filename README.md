@@ -36,4 +36,4 @@ Capstone Project SIB B1 Dicoding Team ID: **CSD-114**
  - Pre-trained Model &mdash; **[MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2)**
 - Palette &mdash; **[Generate from Coolors](https://coolors.co/264653-2a9d8f-e76f51-ddd8b8-ffffff)**
 - Icon &mdash; **[Font Awesome](https://fontawesome.com)**
-- 3D Illustration &mdash; **[Undraw](https://icons8.com)**
+- 3D Illustration &mdash; **[Icons8](https://icons8.com/illustrations)**
