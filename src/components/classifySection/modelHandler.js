@@ -27,7 +27,7 @@ function imageClasses() {
     7: 'Kertas', // 'Paper',
     8: 'Plastik', // 'Plastic',
     9: 'Sepatu', // 'Shoes',
-    10: 'Rumah Tangga', // 'Trash',
+    10: 'Residu', // 'Trash',
     11: 'Kaca Putih' // 'White Glass',
   };
 
