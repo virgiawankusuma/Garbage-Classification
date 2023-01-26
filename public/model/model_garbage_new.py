@@ -134,7 +134,11 @@ print('Number of test batches: %d' % tf.data.experimental.cardinality(test_datas
 
 AUTOTUNE = tf.data.AUTOTUNE
 
-train_ds = train_ds.cache().shuffle(1000).prefetch(buffer_size=AUTOTUNE)
+# train_ds = train_ds.cache().shuffle(1000).prefetch(buffer_size=AUTOTUNE)
+# val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
+# test_dataset = test_dataset.prefetch(buffer_size=AUTOTUNE)
+
+train_ds = train_ds.cache().shuffle(image_count//4).prefetch(buffer_size=AUTOTUNE)
 val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
 test_dataset = test_dataset.prefetch(buffer_size=AUTOTUNE)
 
@@ -283,33 +287,82 @@ plt.show()
 load_model = tf.keras.models.load_model('checkpoint_model.h5')
 load_model.evaluate(x=test_dataset, return_dict=True)
 
-"""## Test"""
+"""## Test
 
-from google.colab import files
-import keras.utils as image
+### Change format to ndarray
+"""
 
-uploaded = files.upload()
+class_names = np.array(class_names)
+class_names_val = np.array(class_names_val)
 
-for fn in uploaded.keys():
+print(f'List label Train data: \n{class_names}\n')
+print(f'List label Validation data: \n{class_names_val}')
+
+image_batch_test, label_batch_test = next(iter(test_dataset))
+
+image_batch_test, label_batch_test = image_batch_test.numpy(), label_batch_test.numpy()
+
+
+predicted_batch = load_model.predict(image_batch_test)
+predicted_batch = tf.squeeze(predicted_batch).numpy()
+
+predicted_ids = np.argmax(predicted_batch, axis=-1)
+predicted_class_names = class_names[predicted_ids]
+
+print(predicted_class_names)
+
+print(f"Labels:\n{label_batch_test}")
+print(f"Predicted labels:\n{predicted_ids}")
+
+true_predict = 0
+false_predict = 0
+
+for i in predicted_ids:
+  if i in label_batch_test:
+    true_predict +=1
+  else:
+    false_predict +=1
+
+print()
+print(f'True Predict Count : {true_predict}')
+print(f'False Predict Count : {false_predict}')
+
+plt.figure(figsize=(15,10))
+plt.subplots_adjust(hspace=0.3)
+
+for n in range(30):
+  plt.subplot(6,5,n+1)
+  plt.imshow(image_batch_test[n].astype('uint8'))
+  color = "blue" if predicted_ids[n] == label_batch_test[n] else "red"
+  plt.title(predicted_class_names[n].title(), color=color)
+  plt.axis('off')
+_ = plt.suptitle("Model predictions")
+
+# from google.colab import files
+# import keras.utils as image
+
+# uploaded = files.upload()
+
+# for fn in uploaded.keys():
  
-  # predicting images
-  path = fn
-  img = image.load_img(path, target_size= IMG_SIZE + (3,))
-  x = image.img_to_array(img)
-  x = np.expand_dims(x, axis=0)
+#   # predicting images
+#   path = fn
+#   img = image.load_img(path, target_size= IMG_SIZE + (3,))
+#   x = image.img_to_array(img)
+#   x = np.expand_dims(x, axis=0)
 
-  images = np.vstack([x])
-  classes = load_model.predict(images, batch_size=10)
-  outclass = np.argmax(classes)
+#   images = np.vstack([x])
+#   classes = load_model.predict(images, batch_size=10)
+#   outclass = np.argmax(classes)
   
-  print(fn)
-  plt.imshow(img)
-  for i, label in enumerate(class_names):
-    if outclass == i:
-      predict = classes[0][i]
-      print(label)
-      print(classes)
-      print(predict)
+#   print(fn)
+#   plt.imshow(img)
+#   for i, label in enumerate(class_names):
+#     if outclass == i:
+#       predict = classes[0][i]
+#       print(label)
+#       print(classes)
+#       print(predict)
 
 """# Save & Convert Model
 
@@ -336,4 +389,10 @@ shutil.make_archive('/content/json', 'zip', output_path)
 
 """## Download Model"""
 
+from google.colab import files
+
+checkpoint_model_path = './checkpoint_model.h5'
+checkpoint_model_path = pathlib.Path(checkpoint_model_path)
+
 files.download('/content/json.zip')
+files.download(checkpoint_model_path)
