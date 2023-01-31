@@ -2,7 +2,7 @@ import { about } from '../../data/homeData';
 
 export default function About() {
   return (
-    <section id="about" className="pt-36"
+    <section id="about" className="py-20 border-b-2 border-t-2 border-primary/50"
     >
       <div className="container">
         <div className="flex flex-wrap justify-center">

@@ -2,7 +2,7 @@ import { hero } from '../../data/acknowledgmentData';
 
 export default function Hero() {
   return (
-    <section id="hero-acknowledgment" className="pt-4">
+    <section id="hero-acknowledgment" className="pt-4 pb-20">
       <div className="container">
         <div className="flex flex-wrap justify-center text-center px-4 lg:px-12">
           <img
