@@ -150,9 +150,10 @@ test_dataset = test_dataset.prefetch(buffer_size=AUTOTUNE)
 """
 
 data_augmentation = tf.keras.Sequential([
-  tf.keras.layers.RandomFlip('horizontal'),
+  tf.keras.layers.RandomFlip('horizontal_and_vertical'),
   tf.keras.layers.RandomRotation(0.2),
-  tf.keras.layers.RandomZoom(0.2)],
+  # tf.keras.layers.RandomZoom(0.2)],
+  tf.keras.layers.RandomZoom(0.1)],
   name="data_augmentation")
 
 for image, _ in train_ds.take(1):
@@ -257,6 +258,10 @@ history = model.fit(train_ds,
 
 ### Plot Result
 """
+
+# Commented out IPython magic to ensure Python compatibility.
+# %matplotlib inline
+plt.style.use('seaborn')
 
 acc = history.history['accuracy']
 val_acc = history.history['val_accuracy']
@@ -363,6 +368,38 @@ _ = plt.suptitle("Model predictions")
 #       print(label)
 #       print(classes)
 #       print(predict)
+
+"""### Testing Model with sklearn.metrics
+
+##### Set up Parameter x_test and y_test
+"""
+
+x_test = []
+y_test = []
+
+for x_batch, y_batch in test_dataset:
+  for x_i, y_i in zip(x_batch, y_batch):
+    x_test.append(x_i)
+    y_test.append(y_i)
+
+x_test = np.array(x_test)
+y_test = np.array(y_test)
+
+# Testing accuracy with the test data
+from sklearn.metrics import accuracy_score
+ 
+pred=np.argmax(model.predict(x_test), axis=-1)
+accuracy = accuracy_score(y_test, pred)
+print("Accuracy: {:.2f}%".format(accuracy * 100))
+
+# Calculate metrics for classification
+from sklearn.metrics import classification_report
+ 
+print(classification_report(y_test, pred))
+
+"""# Model Summary"""
+
+load_model.summary()
 
 """# Save & Convert Model
 
