@@ -1,4 +1,4 @@
-<h1 align=center>Garbage Classification | <a href="https://csd-114.vercel.app/">Demo</a></h1>
+<h1 align=center>Garbage Classification | <a href="https://garbage-classification-git-v10-virgiawan.vercel.app/">Demo</a></h1>
 
 > **Klasifikasi Jenis Sampah Menggunakan Image Classification (Garbage Classification):** Sebuah Web Klasifikasi 12 Jenis Sampah yang dibangun menggunakan Machine Learning dan Tensorflow JS.
 
