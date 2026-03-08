@@ -25,8 +25,8 @@ Untuk menjalankan aplikasi di *Local Environment* Anda, cukup lakukan langkah-la
 
 Capstone Project SIB B1 Dicoding Team ID: **CSD-114**
 
-- Gusti Muhammad Aulia Nur Sulthan (M247R6216) &mdash; [**LinkedIn**](https://www.linkedin.com/in/tann20) | [**GitHub**](https://github.com/tnnz20)
-- Virgiawan Teguh Kusuma (M218R6173) &mdash; [**LinkedIn**](https://www.linkedin.com/in/virgiawankusuma) | [**GitHub**](https://github.com/virgiawankusuma/)
+- Sulthan (M247R6216) &mdash; [**LinkedIn**](https://www.linkedin.com/in/tann20) | [**GitHub**](https://github.com/tnnz20)
+- Virgiawan (M218R6173) &mdash; [**LinkedIn**](https://www.linkedin.com/in/virgiawankusuma) | [**GitHub**](https://github.com/virgiawankusuma/)
 
 ---
 
